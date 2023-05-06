@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8bc418;
+  font: normal 15pt Arial;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  padding: 25px;
+  margin: auto;
+  color: #8bc418;
+}
+
+#info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#info label {
+  font-size: 18px;
+}
+
+#value {
+  width: 60px;
+  margin-left: 5px;
+  border: none;
+  background-color: #8bc418;
+  padding: 6px;
+  outline: none;
+  text-align: center;
+}
+
+.btn {
+  background-color: #8bc418;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  padding: 5px 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#response {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#tabuada {
+  width: 50%;
+  outline: none;
+  background-color: #8bc418;
+  padding: 10px;
+  text-align: center;
+}
+
+#tabuada::-webkit-scrollbar {
+  width: 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  #info {
+    width: 80%;
+  }
+  
+  .box {
+    width: 70%;
+  }
+
+  #tabuada {
+    width: 60%;
+  }
+}
+
+@media (max-width: 425px) {
+  .box {
+    width: 90%;
+  }
+
+  #tabuada {
+    width: 85%;
+  }
+}
+
+@media (max-width: 375px) {
+  #info {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #info .btn {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
